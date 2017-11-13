@@ -13,8 +13,8 @@
     window.onload = function() {
         var width = 800;
         var height = 600;
-        var worldWidth= 1600;
-        var worldHeight= 1200;
+        var worldWidth= 1900;
+        var worldHeight= 1900;
         var speed = 175;
         var player;
         var cursors;
@@ -122,11 +122,11 @@
         	game.stage.disableVisibilityChange = true
         	game.playerMap = {};
 
-            game.world.setBounds(0,0,1600,1200);
+            game.world.setBounds(0,0,worldHeight,worldWidth);
             cursors = game.input.keyboard.createCursorKeys();
             game.physics.startSystem(Phaser.Physics.ARCADE);
 
-            drawStars(200);
+            drawStars(100);
 
             Client.askNewPlayer();
 
